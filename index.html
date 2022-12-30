@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Test</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/7d46328599.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="brand-title">Business name</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#our-services">Our Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="home">
+
+        <div class="heading">
+            <h1 class="fade">Business Landing <br>Page</h1>
+        </div>
+        <div class="image">
+            <img src="./image.png" alt="noimage">
+        </div>
+    </div>
+
+    <div class="symbol">
+        <a href="#our-services"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+
+    <section id="aboutUs" class="aboutUs">
+        <div class="img">
+            <img src="./figman.jfif" height="400px" width="330px" alt="">
+        </div>
+        <div class="content">
+            <div class="title">
+                <p>ABOUT US</p>
+            </div>
+            <div class="context">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ad praesentium cum doloremque ducimus
+                nulla aperiam exercitationem culpa adipisci eveniet inventore error, officia magni a! Quae id molestiae
+                optio atque adipisci? Sint, odit? Blanditiis, consequatur tempore. Facilis, aliquam unde doloribus eum
+                voluptas suscipit corrupti esse deleniti similique eveniet impedit, quae aliquid itaque eaque blanditiis
+                quidem maiores laudantium autem tempora mollitia, illum hic rerum eligendi illo. Accusamus cupiditate
+                enim dolor rerum consequatur tenetur ipsa voluptate perferendis. Molestiae deleniti ipsa commodi. In
+                ipsa, esse impedit eius, laudantium ut repudiandae ipsum quisquam harum ab animi dolores veritatis
+                corrupti quasi magni qui beatae! Voluptas consequatur laborum, nihil voluptatibus deleniti magnam
+                ducimus dolor voluptates porro voluptatem. Consequatur culpa harum dolorum libero possimus, aspernatur
+                rerum, iure debitis fugit nobis inventore sit voluptas tempora dolorem laboriosam quo nostrum odit
+                tempore nesciunt vero repellat eos? Saepe nam ducimus vitae dignissimos suscipit. At dicta aspernatur ab
+                ad sit itaque, culpa autem quos dolorem eius ex facilis voluptates blanditiis ipsam animi temporibus
+                consequatur tempore vero, distinctio voluptatibus incidunt impedit doloremque, repellat id. Inventor ad
+                ex culpa earum maiores, quidem repellendus
+                a quo quasi?
+            </div>
+        </div>
+    </section>
+
+    <section id="our-services" class="our-services">
+
+        <div class="titleServices">
+            <p>OUR SERVICES</p>
+        </div>
+
+        <div class="services">
+
+            <div class="service">
+                <h1>Service 1</h1>
+                <p> ipsum dolor sit amet consectetur adipisicing elit. Totam repellat molestias nisi itaque qui
+                    ducimus vero possimus sapiente non alias. Deleniti possimus ducimus explicabo iure. Rerum, est
+                    exercitationem alias molestias architecto dolore. Laudantium et veniam repellat incidunt. Saepe
+                    iusto dolorum, totam ipsum obcaecati inventore dolorem voluptas voluptatum explicabo minus ducimus.
+                </p>
+            </div>
+
+            <div class="service">
+                <h1>Service 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellat molestias nisi itaque qui
+                    ducimus vero possimus sapiente non alias. Deleniti possimus ducimus explicabo iure. Rerum, est
+                    exercitationem alias molestias architecto dolore. Laudantium et veniam repellat incidunt. Saepe
+                    iusto dolorum, totam ipsum obcaecati inventore dolorem voluptas voluptatum explicabo minus ducimus.
+                </p>
+            </div>
+
+            <div class="service">
+                <h1>Service 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellat molestias nisi itaque qui
+                    ducimus vero possimus sapiente non alias. Deleniti possimus ducimus explicabo iure. Rerum, est
+                    exercitationem alias molestias architecto dolore. Laudantium et veniam repellat incidunt. Saepe
+                    iusto dolorum, totam ipsum obcaecati inventore dolorem voluptas voluptatum explicabo minus ducimus.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer id="contact" class="contact">
+        <div class="title-contact">
+            <p>CONTACT US</p>
+        </div>
+
+        <div class="form-container">
+            <form class="form-div">
+                <input type="text" id="firstname" placeholder="Full Name" required>
+                <input type="text" id="sname" placeholder="Last Name" required>
+                <input type="email" id="iemail" placeholder="Email Address" required>
+                <input type="text" id="text" placeholder="Reason For Contacting" required><br>       
+                <input type="submit" class="btn" onclick ="myFunction()" value="Submit">
+        </form>
+        </div>
+    </footer>
+
+    <script>
+
+        function myFunction() {
+            let fname = document.getElementById("firstname").value;
+            let lname = document.getElementById("sname").value;
+            let email = document.getElementById("iemail").value;
+            let reason = document.getElementById("text").value;
+
+            if (fname != '' && lname != '' && email != '' && reason != '') {
+                alert("Success");
+            }
+
+        }
+    </script>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
